@@ -1,0 +1,31 @@
+p.highlight {
+    color: blue;
+}
+
+div#special {
+    background-color: rgb(235, 176, 68);
+    box-shadow: 0.1em 0.1em 0.5em 0.1em black;
+}
+
+a {
+    color: yellow;
+}
+
+a[href^="#"] {
+    color: darkblue;
+}
+
+p.class1.class2.class3 {
+    color: blue;
+}
+
+ul li:first-child {
+    color: rgb(100, 178, 203);
+}
+
+
+ul li:last-child {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}

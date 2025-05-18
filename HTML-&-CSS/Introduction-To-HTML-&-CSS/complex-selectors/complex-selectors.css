@@ -1,0 +1,20 @@
+header a {
+    text-decoration: none;
+    color: blue;
+}
+
+header ul li:first-child a{
+    font-weight: bold;
+}
+
+header ul li:nth-child(3) a{
+    font-style: italic;
+}
+
+.article-content > p {
+    background-color: lightblue;
+}
+
+img {
+    border: 10px solid red;
+}
