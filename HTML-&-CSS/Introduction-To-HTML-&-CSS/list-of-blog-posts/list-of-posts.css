@@ -1,0 +1,11 @@
+header p {
+    color: gray;
+}
+
+time {
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+}
