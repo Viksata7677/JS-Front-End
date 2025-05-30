@@ -1,0 +1,29 @@
+.flex-item {
+    background: #eee;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.flex-container-nowrap {
+    width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container-wrap {
+    width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container-wrap-reverse {
+    width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
