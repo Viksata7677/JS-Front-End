@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+body {
+    background-color: #ccc;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+body > * {
+    width: 100%;
+}
+
+.section {
+    background-color: white;
+    max-width: 110ch;
+    margin: 0 auto;
+    padding: 0.2em 0.2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0,2);
+    display: flex;
+    gap: 1em;
+}
+
+.calendar {
+    display: flex;
+    gap: 0;
+}
+
+.calendar > * {
+    border: 1px solid black;
+    flex: 1 1 auto;
+}
+
+.calendar .aside {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30ch;
+}
+
+.calendar .aside > * {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.aside div {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.row h3 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 1em;
+}
+
+.row > ul {
+    display: flex;
+}
+
+.row > ul li {
+    flex: 1 1 auto;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid black;
+}

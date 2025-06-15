@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid green;
+    padding: 1.5em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+body > * {
+    border: 2px solid blue;
+    padding: 1.5em;
+}
+
+main {
+    flex: 1 1 auto;
+}
