@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+body {
+    background-color: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard {
+    background-color: #ccc;
+    border: 1px solid #AAA;
+    border-radius: 0.3em;
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    box-shadow: 0 0.2em 0 0 rgb(0, 0, 0, 0.3);
+}
+
+.keyboard .row {
+    display: flex;
+    gap: 0.8em;
+}
+
+.keyboard .keys {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 0.2em;
+    padding: 0.6em 1em;
+    box-shadow: 0 0.1em 0 0 rgb(0, 0, 0, 0.2);
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.keyboard .keys:active {
+    top: 0.1em;
+    background-color: #AAA;
+    box-shadow: none;
+    color: white;
+}
+
+.keyboard .special {
+    background-color: #e9e8e8;
+}
+
+.keyboard .keys:not(.special) {
+    flex-basis: 3ch;
+}
+
+.keyboard .keys.space {
+    flex-basis: 35%;
+}
+
+.keyboard .row:nth-child(5) :last-child {
+    flex-basis: 13%;
+}
+
+.keyboard .row:nth-child(4) {
+    padding-right: 4.2em;
+}
+
+.keyboard .enter {
+    border-bottom-right-radius: 0;
+}
+
+.keyboard .enter::after {
+    display: block;
+    content: '';
+    width: 6.5ch;
+    height: 6.9ch;
+    position: absolute;
+    top: calc(100% - 0px);
+    right: -1px;
+    background-color: #e9e8e8;
+    border: inherit;
+    border-radius: 0 0 0.3em 0.3em;
+    border-top: none;
+    box-shadow: inherit;
+}
+
+

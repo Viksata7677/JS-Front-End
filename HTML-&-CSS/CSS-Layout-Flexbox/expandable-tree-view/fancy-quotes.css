@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+body {
+    background-color: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    padding-bottom: 1.5em;
+    opacity: 0.5;
+}
+
+.section {
+    display: flex;
+    gap: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section .main {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+
+.section .aside {
+    flex: 1 1 60ch;
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+
+.section .aside > * {
+    flex-grow: 1;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    padding: 1.5em;
+}
