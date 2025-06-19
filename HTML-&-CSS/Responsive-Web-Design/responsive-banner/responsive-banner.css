@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+body {
+    background-color: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+body > * {
+    width: 100%;
+}
+
+.site {
+    max-width: 100ch;
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.inner {
+    display: flex;
+    gap: 2em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1em;
+}
+
+.content h2,
+.content p {
+    opacity: 0.6;
+}
+
+.media {
+  background-color: #eee;
+  border-radius: 0.3em;
+  flex: 0 1 30ch;
+  border: 1px solid #ccc;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.buttons a {
+    background-color: #eee;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.buttons a:first-child {
+    color:white;
+    background-color: darkorchid;
+}
+
+.buttons a:nth-child(2) {
+    color: #5e5e5e;
+}
+
+@media (width <= 600px) {
+    .inner {
+        flex-direction: column;
+    }
+
+    .inner .media {
+        order: -999;
+    }
+}
