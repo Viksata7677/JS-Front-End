@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    padding: 4em;
+}
+
+body > * {
+    width: 100%;
+}
+
+.login-form {
+    max-width: 500px;
+    background-color: white;
+    padding: 3em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+
+    legend {
+        font-size: 1.6em;
+        font-weight: bold;
+
+        &::after {
+            display: block;
+            content: '';
+            width: calc(100% + 3em);
+            height: 0.1em;
+            background-color: lightgray;
+            margin: 1em 0;
+        }
+    }
+}
+
+.field {
+    padding-bottom: 1.5em;
+    position: relative;
+
+}
+
+.field:has(:required) label::after {
+    display: inline-block;
+    content: '*';
+    color: red;
+    margin-left: 0.3em;
+}
+
+.field {
+    &:has(#email)::before {
+        display: block;
+        content: "#";
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &:has(#password)::before {
+        display: block;
+        content: "$";
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &:has(:user-invalid) {
+        label {color: red;}
+        input {border-color: red;}
+    }
+
+    &:has(:user-valid) {
+        label {color: green;}
+        input {border-color: green;}
+    }
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+    border: 2px solid #ccc;
+    padding: 1em;
+    border-radius: 0.3em;
+    display: block;
+    width: 100%;
+    outline: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: darkorange;
+}
+
+.info {
+    opacity: 0.6;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: 1em 0;
+    border: none;
+    background-color: darkorange;
+    color: white;
+    border-radius: 0.3em;
+    font-weight: bold;
+    outline-color: darkorange;
+    outline-offset: 2px;
+}
