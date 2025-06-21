@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    padding: 4em;
+}
+
+body > * {
+    width: 100%;
+}
+
+h3 {
+   padding-bottom: 3.5em;
+}
+
+
+
+
+.registration-card {
+    max-width: 500px;
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+
+    legend {
+    padding: 0 0.5em;
+    font-weight: bold;
+    opacity: 0.7;
+    }
+
+    fieldset {
+        padding: 2em;
+        border-radius: 0.3em;
+        border: none;
+        border: 2px solid #ccc;
+        margin-bottom: 2em;
+    }
+
+    .field {
+        margin-bottom: 2em;
+    }
+
+    label,
+    button {
+    display: block;
+    }
+
+    input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin: 0.2em 0;
+    }
+
+    label,
+    .info {
+        opacity: 0.7;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .info {
+        font-style: italic;
+    }
+
+    button {
+        width: 100%;
+        border: none;
+        padding: 1.5em 0;
+        font-weight: bold;
+        background-color: #eaeaea;
+        border-radius: 0.3em;
+        font-size: 16px;
+    }
+}
+

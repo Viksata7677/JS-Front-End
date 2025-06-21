@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+        <div class="registration-card">
+        
+        <form action="#">
+            <h3>Registration</h3>
+            <fieldset>
+                <legend>Login information</legend>
+
+                <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <span class="info">example: john.doe@gmail.com</span>
+                </div>
+
+                <div class="field">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <span class="info">minimum 6 characters, letters and numbers, at least 1 special character</span>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional information</legend>
+
+                <div class="field">
+                    <label for="date-of-birth">Date of Birth</label>
+                    <input type="date" name="date-of-birth" id="date-of-birth" required>
+                    <span class="info">example: john.doe@gmail.com</span>
+                </div>
+
+            </fieldset>
+            <button type="submit">Login</button>
+        </form>
+
+    </div>
+</body>
+</html>
