@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0B0B0B;
+    padding: 1.5em;
+}
+
+body > * {
+    width: 100%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5em;
+    color: white;
+}
+
+.navigation p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 3em;
+    padding-right: 0.5em;
+}
+
+.navigation ul li {
+    font-family: "Inter", sans-serif;
+    display: block;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.latest-movies {
+    color: white;
+    padding: 6em 3em;
+    background-image: url(img/movies/city-under-the-fire-bg.webp);
+    border-radius: 0.6em;
+    padding-top: 0;
+    background-position: top;
+}
+
+.latest-movies h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 41px;
+    max-width: 22ch;
+    line-height: 1.1;
+    padding-top: 140px;
+}
+
+.latest-movies p.releases {
+    color: #ccc;
+    padding: 1em 0;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.latest-movies p.streaming {
+    font-size: 14px;
+    color: red;
+    font-family: "Inter", sans-serif;
+}
+
+.latest-movies h3 {
+    font-size: 29px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.latest-movies .genres ul {
+    display: flex;
+    gap: 0.7em;
+}
+
+.latest-movies .genres ul li {
+    display: block;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 0.7em;
+    padding: 0.1em 0.7em;
+    font-size: 13px;
+    margin: 0.8em 0;
+    font-family: "Inter", sans-serif;
+}
+
+.latest-movies .rating {
+    color: #bbb;
+    padding-bottom: 2.5em;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.latest-movies button {
+    display: block;
+    background-color: #E50914;
+    color: white;
+    padding: 0.8em 2em;
+    border-radius: 0.4em;
+    margin-bottom: 2em;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    border: none;
+}
+
+.continue-watching {
+    margin: 2em 0;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+.continue-watching p {
+    padding-bottom: 0.8em;
+}
+
+.continue-watching .media {
+  position: relative;
+  display: inline-block;
+}
+
+.continue-watching .media img {
+  width: 300px; 
+}
+
+.continue-watching .progress-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2em;
+  background-color: #333333;
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+
+.continue-watching .progress-fill {
+  width: 40%;
+  height: 100%;
+  background-color: red;
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+
+.top-picks p {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    padding-bottom: 0.8em;
+}
+
+.top-picks img {
+    width: 300px;
+    border-radius: 0.5em;
+}
+
+.top-picks ul {
+    display: flex;
+    align-items: left;
+    gap: 2em;
+}
+
+.top-picks ul li {
+    display: block;
+}
+
+.coming-soon {
+    margin: 3em 0;
+}
+
+.coming-soon .inner {
+    background-color: #1A1A1A;
+    border-radius: 0.4em;
+    padding: 2em;
+}
+
+.coming-soon p {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    padding-bottom: 0.8em;
+}
+
+.coming-soon img {
+    width: 165px;
+    border-radius: 0.4em;
+}
+
+.coming-soon .inner {
+    display: flex;
+    gap: 1em;
+}
+
+.coming-soon .inner p {
+    line-height: 1.2;
+}
+
+.coming-soon .inner p:first-of-type {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 0;
+    padding-top: 0.4em;
+}
+
+.coming-soon .inner p:nth-child(2) {
+    font-size: 16px;
+    color: #ccc;
+    padding-bottom: 0;
+}
+
+.coming-soon .inner button {
+    display: block;
+    background-color: #E50914;
+    color: white;
+    padding: 0.8em 1.6em;
+    border-radius: 0.3em;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    border: none;
+    margin-top: 1em;
+}
+
+.browse {
+    border-bottom: 2px solid #969696;
+}
+
+.browse p {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin-bottom: 3.5em;
+}
+
+.browse ul {
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+}
+
+.browse ul li {
+    display: block;
+    position: relative;
+    margin-bottom: 2em;
+    padding-top: 1em;
+}
+
+.browse ul li::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -4em;
+  background-color: #111111;
+  border-radius: 2em;
+}
+
+.browse ul li:nth-child(1)::before {
+  background-image: url(img/icons/icon-action.webp);
+}
+
+.browse ul li:nth-child(2)::before {
+  background-image: url(img/icons/icon-comedy.webp);
+  left: 8px;
+}
+
+.browse ul li:nth-child(3)::before {
+  background-image: url(img/icons/icon-horror.webp);
+}
+
+.browse ul li:nth-child(4)::before {
+  background-image: url(img/icons/icon-sci-fi.webp);
+}
+
+.browse ul li:nth-child(5)::before {
+  background-image: url(img/icons/icon-musical.webp);
+  left: 4px;
+}
+
+.browse ul li:nth-child(6)::before {
+  background-image: url(img/icons/icon-romance.webp);
+  left: 10px;
+}
+
+.browse ul li:nth-child(7)::before {
+  background-image: url(img/icons/icon-family.webp);
+}
+
+
+.browse ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.register {
+    text-align: center;
+    color: white;
+}
+
+.register h3 {
+    padding-top: 2em;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.register p {
+    padding: 1em;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+.register button {
+    display: block;
+    background-color: #E50914;
+    color: white;
+    padding: 0.8em 1.8em;
+    border-radius: 0.6em;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    border: none;
+    margin: 0 auto;
+}
